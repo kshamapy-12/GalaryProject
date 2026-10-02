@@ -1,0 +1,14 @@
+function Card(props) {
+    return ( 
+     <div>
+        <a href={props.elem.url} target='_blank'>
+           <div className='h-50 w-55 overflow-hidden rounded-2xl bg-white'>
+        <img className='h-full w-full object-cover' src={props.elem.download_url} alt='' />
+      </div>
+      <h2 className='font-semibold text-lg'>{props.elem.author}</h2>
+        </a>
+     </div>
+     );
+}
+
+export default Card;
